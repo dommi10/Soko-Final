@@ -27,8 +27,8 @@ class Product {
   final String name;
   final int price;
 
-  String get assetName => '$id-0.jpg';
-  String get assetPackage => 'shrine_images';
+  String get assetName => '$id.jpg';
+  String get assetPackage => 'images';
 
   @override
   String toString() => '$name (id=$id)';
