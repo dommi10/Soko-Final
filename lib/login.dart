@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
@@ -52,26 +51,49 @@ class _LoginPageState extends State<LoginPage> {
             ),
             ButtonBar(
               children: <Widget>[
-                FlatButton(
-                  child: const Text('CANCEL'),
-                  shape: const BeveledRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(7.0)),
-                  ),
-                  onPressed: () {
-                    _usernameController.clear();
-                    _passwordController.clear();
-                  },
-                ),
-                RaisedButton(
-                  child: const Text('NEXT'),
-                  elevation: 8.0,
-                  shape: const BeveledRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(7.0)),
-                  ),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                ),
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Row(
+                        children: <Widget>[
+                          FlatButton(
+                            child: const Text('CANCEL'),
+                            shape: const BeveledRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(7.0)),
+                            ),
+                            onPressed: () {
+                              _usernameController.clear();
+                              _passwordController.clear();
+                            },
+                          ),
+                          RaisedButton(
+                            child: const Text('NEXT'),
+                            elevation: 8.0,
+                            shape: const BeveledRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(7.0)),
+                            ),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                    RaisedButton(
+                      child: const Text('CREER UN COMPTE'),
+                      elevation: 8.0,
+                      shape: const BeveledRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    )
+                  ],
+                )
               ],
             ),
           ],
