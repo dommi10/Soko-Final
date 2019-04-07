@@ -174,6 +174,13 @@ class _MyHomeState extends State<MyHome> {
                 new InkWell(
                   onTap: (){},
                   child: new ListTile(
+                    title: new Text('Verrouiller',style: new TextStyle(color: Colors.deepPurple)),
+                    leading: new Icon(Icons.lock,color: Colors.lightBlue,),
+                  ),
+                ),
+                new InkWell(
+                  onTap: (){},
+                  child: new ListTile(
                     title: new Text('Help',style: new TextStyle(color:Colors.deepPurple),),
                     leading: new Icon(Icons.help,color: Colors.lightBlue,),
                   ),

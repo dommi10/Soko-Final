@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:soko/main11.dart';
 import 'stacked_icons.dart';
 import 'home.dart';
 
@@ -65,7 +66,7 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
                     child: GestureDetector(
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => HomePage()
+                          builder: (context) => MyHome()
                         ));
                       },
                                           child: new Container(
