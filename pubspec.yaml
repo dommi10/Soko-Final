@@ -22,10 +22,18 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+  #cupertino_icons: ^0.1.2
   intl: ^0.15.7
   scoped_model: ^0.3.0
   shrine_images: ^1.0.0
+
+  carousel_pro:
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.0
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -42,9 +50,28 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/diamond.png
-    - assets/slanted_menu.png
-    - packages/images/
+  
+   - images/shop1.jpg
+   - images/shop2.png
+   - images/shop3.png
+   - images/shop4.jpg
+   - images/cat/glasses.png
+   - images/cat/jwellery.png
+   - images/cat/shoe.png
+   - images/cat/tshirt.png
+   - images/cat/watch.png
+   - images/products/blazer1.jpeg
+   - images/products/blazer2.jpeg
+   - images/products/dress1.jpeg
+   - images/products/dress2.jpeg
+   - images/products/hills1.jpeg
+   - images/products/hills2.jpeg
+   - images/products/pants1.jpg
+   - images/products/pants2.jpeg
+   - images/products/shoe1.jpg
+   - images/products/skt2.jpeg
+   - images/products/skt1.jpeg
+
   fonts:
     - family: Rubik
       fonts:
